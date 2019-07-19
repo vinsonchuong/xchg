@@ -1,0 +1,11 @@
+{
+  "name": "xchg",
+  "private": true,
+  "scripts": {
+    "start": "node -r overdub/register start.js"
+  },
+  "dependencies": {
+    "carlo": "^0.9.46",
+    "overdub": "^2.3.1"
+  }
+}
