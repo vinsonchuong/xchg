@@ -1,7 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Ui from './ui'
 
-render(
-  <>Hello World!</>,
-  window.root
-)
+render(<Ui />, window.root)
