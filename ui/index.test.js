@@ -1,3 +1,4 @@
+// @flow
 import test from 'ava'
 import { start } from './'
 import { openCarlo } from 'puppet-strings-carlo'
