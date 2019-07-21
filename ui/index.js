@@ -13,9 +13,7 @@ export async function start() {
 
   const server = await startServer(
     port,
-    respondToRequests(
-      serveUi({ log: printLog, entry: 'ui/index.html' })
-    )
+    respondToRequests(serveUi({ log: printLog, entry: 'ui/index.html' }))
   )
 
   const carloApp = await carlo.launch()

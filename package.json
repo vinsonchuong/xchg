@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "node -r overdub/register start.js",
-    "test": "ava -v"
+    "test": "standard -v --fix && ava -v"
   },
   "dependencies": {
     "carlo": "^0.9.46",
@@ -15,7 +15,8 @@
   "devDependencies": {
     "ava": "^2.2.0",
     "puppet-strings": "^3.1.2",
-    "puppet-strings-carlo": "^1.1.0"
+    "puppet-strings-carlo": "^1.1.0",
+    "standard-esnext": "^5.3.1"
   },
   "babel": {
     "plugins": [
