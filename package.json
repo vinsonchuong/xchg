@@ -2,7 +2,8 @@
   "name": "xchg",
   "private": true,
   "scripts": {
-    "start": "node -r overdub/register start.js"
+    "start": "node -r overdub/register start.js",
+    "test": "ava -v"
   },
   "dependencies": {
     "carlo": "^0.9.46",
@@ -11,9 +12,22 @@
     "react-dom": "npm:@hot-loader/react-dom",
     "react-hot-loader": "^4.12.8"
   },
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "puppet-strings": "^3.1.2",
+    "puppet-strings-carlo": "^1.1.0"
+  },
   "babel": {
     "plugins": [
       "react-hot-loader/babel"
     ]
+  },
+  "ava": {
+    "require": "overdub/register",
+    "babel": {
+      "testOptions": {
+        "extends": "overdub/babel"
+      }
+    }
   }
 }

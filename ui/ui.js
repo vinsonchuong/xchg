@@ -1,10 +1,5 @@
-import { hot } from 'react-hot-loader'
 import React from 'react'
+import { render } from 'react-dom'
+import Hello from './hello'
 
-export default hot(module)(() => {
-  return (
-    <div>
-      Hello World!
-    </div>
-  )
-})
+render(<Hello />, window.root)
