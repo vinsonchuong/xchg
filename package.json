@@ -7,10 +7,14 @@
   },
   "dependencies": {
     "carlo": "^0.9.46",
+    "classnames": "^2.2.6",
+    "heliograph": "^4.10.5",
+    "overdub": "^2.4.0",
     "passing-notes": "^5.4.0",
     "react": "^16.8.6",
     "react-dom": "npm:@hot-loader/react-dom",
-    "react-hot-loader": "^4.12.10"
+    "react-hot-loader": "^4.12.10",
+    "react-jss": "^10.0.0-alpha.23"
   },
   "devDependencies": {
     "ava": "^2.2.0",
@@ -24,6 +28,9 @@
       "react-hot-loader/babel"
     ]
   },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
   "ava": {
     "require": "overdub/register",
     "babel": {
