@@ -13,7 +13,7 @@ const useStyles = createUseStyles({
   }
 })
 
-export default function({ className }) {
+export default function Logo({ className }) {
   const classes = useStyles()
 
   return (

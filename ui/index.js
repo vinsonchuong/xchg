@@ -1,4 +1,3 @@
-// @flow
 import {
   startServer,
   stopServer,

@@ -1,4 +1,3 @@
-// @flow
 import { hot } from 'react-hot-loader'
 import React from 'react'
 import { createUseStyles } from 'react-jss'
@@ -25,7 +24,7 @@ const useStyles = createUseStyles({
 
   header: {
     padding: '16px',
-    background: '#d5d6d1',
+    background: '#d5d6d1'
   },
 
   market: {
@@ -46,11 +45,9 @@ export default hot(module)(() => {
         <Logo />
       </div>
 
-      <div className={cx(classes.market)}>
-      </div>
+      <div className={cx(classes.market)} />
 
-      <div className={cx(classes.user)}>
-      </div>
+      <div className={cx(classes.user)} />
     </div>
   )
 })
